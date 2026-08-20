@@ -1,0 +1,7 @@
+{
+  "name": "Monkyfi Connect",
+  "description": "Plataforma de Evaluación de Madurez de IA y Estrategia para Infraestructura de Telecomunicaciones y Digital.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

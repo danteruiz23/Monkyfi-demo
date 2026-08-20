@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-ink: #0A0C14;
+    --surface-dim: #0F131D;
+    --surface-container-lowest: #0A0E17;
+    --surface-container-low: #171C25;
+    --surface-container: #1B2029;
+    --surface-container-high: #262A34;
+    --surface-container-highest: #31353F;
+    --primary-cyan: #00F5FF;
+    --primary-cyan-dim: #00DCE5;
+    --gold-cream: #F2C98B;
+    --gold-secondary: #E9C083;
+    --premium-cream: #FFFDD0;
+    --telecom-blue: #4FA9E8;
+    --on-surface: #DFE2F0;
+    --on-surface-variant: #B9CACA;
+    --border-subtle: rgba(255, 255, 255, 0.1);
+    --glow-cyan: rgba(0, 245, 255, 0.15);
+  }
+
+  body {
+    background-color: var(--bg-ink);
+    color: var(--on-surface);
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Typography styles matching the design system */
+.font-tech-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.font-tech-score {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.font-display-lg {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.font-headline-lg {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(24px, 3.5vw, 32px);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.font-body-lg {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Glowing utilities */
+.glow-cyan-card {
+  box-shadow: 0 0 25px rgba(0, 245, 255, 0.08);
+}
+
+.glow-cyan-card:hover {
+  box-shadow: 0 0 35px rgba(0, 245, 255, 0.18);
+}
+
+.glow-cyan-btn {
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.2);
+}
+
+.glow-cyan-btn:hover {
+  box-shadow: 0 0 25px rgba(0, 245, 255, 0.4);
+}
+
+.glow-gold-btn {
+  box-shadow: 0 0 15px rgba(242, 201, 139, 0.15);
+}
+
+.glow-gold-btn:hover {
+  box-shadow: 0 0 25px rgba(242, 201, 139, 0.3);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262a34;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00dce5;
+}
